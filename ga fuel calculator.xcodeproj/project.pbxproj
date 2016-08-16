@@ -107,8 +107,11 @@
 				697EFD091D639EF600666419 /* LaunchScreen.storyboard */,
 				697EFD0C1D639EF600666419 /* Info.plist */,
 			);
+			indentWidth = 4;
 			path = "ga fuel calculator";
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 1;
 		};
 		697EFD141D639EF600666419 /* ga fuel calculatorTests */ = {
 			isa = PBXGroup;

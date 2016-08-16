@@ -9,7 +9,25 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    /** Fuel Calculation Inputs & Outputs **/
+    
+    @IBOutlet var fuelTotalBefore: UILabel!
+    @IBOutlet var fuelTotalNow: UILabel!
+    @IBOutlet var fuelTotalBeforeField: UITextField!
+    @IBOutlet var fuelTotalNowField: UITextField!
+    @IBOutlet var fuelResult: UILabel!
+    
+    @IBAction func fuelCalculate(sender: UIButton) {
+        let a = (fuelTotalBefore.text as NSString!).floatValue
+        let b = (fuelTotalNow.text as NSString!).floatValue
+        let sum = a + b
+        fuelResult.text = "\(sum)"
+    }
+    
+    /** End of Fuel Calcuations **/
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
