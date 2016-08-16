@@ -18,13 +18,13 @@ class FirstViewController: UIViewController {
     @IBOutlet var fuelTotalNowField: UITextField!
     @IBOutlet var fuelResult: UILabel!
     
-    @IBAction func fuelCalculate(sender: UIButton) {
-        let a = (fuelTotalBefore.text as NSString!).floatValue
-        let b = (fuelTotalNow.text as NSString!).floatValue
-        let sum = a + b
-        fuelResult.text = "\(sum)"
-    }
-    
+	@IBAction func fuelCalculate(sender: UIButton) {
+		let a = (fuelTotalBeforeField.text as NSString!).floatValue
+		let b = (fuelTotalNowField.text as NSString!).floatValue
+		let sum = a + b
+		fuelResult.text = "\(sum)"
+	}
+	
     /** End of Fuel Calcuations **/
     
     
